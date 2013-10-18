@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://jobs.github.com/positions/19341a08-377e-11e3-862f-7f91026928c0.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - jobs.github.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 18 Oct 2013 08:44:42 GMT
+      Content-Type:
+      - application/json;charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - sameorigin
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Length:
+      - '4032'
+      Set-Cookie:
+      - rack.session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRiJFMDEzZWM4OWNhY2YyZmVjNDM0OWRl%0AODY5ZDVmNjQ4OTNkMTQ4MmM0NTdkNmUxYjU1MjZlMmViM2FjZDRjODRmOEki%0ADXRyYWNraW5nBjsARnsISSIUSFRUUF9VU0VSX0FHRU5UBjsARiItYjIxN2U5%0AOGMzYmY3MGYzY2Y0NjMzYTU0NDdkNjU4N2VlYTk3NGJhMUkiGUhUVFBfQUND%0ARVBUX0VOQ09ESU5HBjsARiItZGRkMDk4OTE3NGYxOWE1YjE4NzkxMjEzY2M0%0AMGM1YTYwOWQyNTQ2Y0kiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsARiItZGEz%0AOWEzZWU1ZTZiNGIwZDMyNTViZmVmOTU2MDE4OTBhZmQ4MDcwOQ%3D%3D%0A--82b12d0cd876bc5fdc2b6b4c49f607c252adab49;
+        path=/; HttpOnly; secure
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: |
+        {"id":"19341a08-377e-11e3-862f-7f91026928c0","created_at":"Thu Oct 17 22:48:01 UTC 2013","title":"Sr. Mobile Application Developer, Android at ModCloth","location":"San Francisco","type":"Full Time","description":"<p>ModCloth currently has an exciting opportunity for a highly skilled Android developer. You will join our San Francisco-based engineering team, building our v1.0 Android application for phone and tablet. Our iOS app is highly rated and designated an Editor\u2019s Choice app - so expectations are high!</p>\n\n<p>We are excited by the possibilities of the Android platform and the distribution options of the Play store; this is not just a port of our existing iOS app. We are looking to leverage the unique aspects of the platform and deliver a first class experience to our large (and growing) Android customer base.</p>\n\n<h3>Responsibilities:</h3>\n\n<p>Define, develop, and deliver features from product roadmap (v1.0 + ongoing)\nChampion best practices for Android development and testing\nCreate elegant and maintainable code\nRaise the team&#39;s skill level through pairing, design/code reviews, and mentoring\nResearch and prototype solutions to difficult problems, remove team roadblocks\nEnsure that finished products fully meet the UX designer\u2019s intention\nEvangelize the best new software libraries, techniques and practices\nDesign full-stack \u201cvertical slices of functionality\u201d</p>\n\n<h3>Requirements:</h3>\n\n<p>2+ years Android development experience, with knowlegde and experience in developing for multiple android operating systems and platforms\nSolid server side/API programming experience\nInterest in Android design principles and appreciation of developer guidelines\nAbility to mentor junior members of the team\nFull understanding of Agile Development and its best practices\nGreat communication and problem solving skills\nDesire to work with and help build a diverse team with a wide variety of backgrounds and interests</p>\n\n<h3>Nice to Have experience:</h3>\n\n<p>Ruby on Rails\nRobotium\nRobolectric\nExperience shipping apps via the Play store\nWell considered opinion on ADT vs. Android Studio\nE-commerce\nInterest in open-source projects</p>\n\n<h3>The Benefits You\u2019ll Get:</h3>\n\n<p>As part of the ModCloth community, you\u2019ll be entitled to a great list of benefits including (but not limited to!) medical, dental, vision, 401k, life insurance, emergency travel assistance, flex time, and continuing education stipends. Oh, and let\u2019s not forget the snack wall and the staggering employee discount!</p>\n\n<h3>About ModCloth:</h3>\n\n<p>If you\u2019ve made it this far, you probably want some more background on ModCloth. Not a prob! ModCloth is an innovative, rapidly growing e-retailer that sells affordable independent designer fashion and decor. Through groundbreaking technology, social media, and customer involvement, we\u2019re creating a brand that\u2019s disrupting the world of social commerce. You\u2019ve already seen how this is happening with our consumer-empowering Be the Buyer program and customer-designed Make the Cut initiative, and that\u2019s just the beginning of what\u2019s up our sleeve. By combining this eye for innovation with a fun-loving group of employees whose culture centers on passion, entrepreneurship, and fun ModCloth is furthering its current success!</p>\n\n<p>Itching for more info about life at ModCloth? Then, take a look-see at our ModCloth Careers Twitter (<a href=\"http://bit.ly/dNSfyh\">http://bit.ly/dNSfyh</a>) and Facebook (<a href=\"http://on.fb.me/eImYYU\">http://on.fb.me/eImYYU</a>) pages!</p>\n","how_to_apply":"<p>Apply here: <a href=\"https://hire.jobvite.com/j?cj=oooSXfwl&amp;s=GitHub\">https://hire.jobvite.com/j?cj=oooSXfwl&amp;s=GitHub</a></p>\n","company":"ModCloth","company_url":"http://www.modcloth.com","company_logo":"http://github-jobs.s3.amazonaws.com/f5100178-377d-11e3-8618-7ebb0e979680.png","url":"http://jobs.github.com/positions/19341a08-377e-11e3-862f-7f91026928c0"}
+    http_version: 
+  recorded_at: Fri, 18 Oct 2013 08:44:44 GMT
+recorded_with: VCR 2.6.0
