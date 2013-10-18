@@ -1,16 +1,14 @@
+require 'open-uri'
+
 module Bob
   module Fetchers
     module Github
-      include ::Bob::Fetchers::Base
       extend self
 
       def fetch(url)
-        uri = URI("#{url}.json")
-        response = get uri
+        response = URI("#{url}.json").read
 
-        data = ::Oj.load(response.body)
-
-        create_job(data)
+        create_job ::Oj.load(response)
       end
 
       def create_job(data)
