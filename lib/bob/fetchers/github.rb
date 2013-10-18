@@ -14,11 +14,16 @@ module Bob
       end
 
       def create_job(data)
-        name = data["title"]
-        description = data["description"]
-        extra_info = data
+        opts = {
+          name: data["title"],
+          description: data["description"],
+          company_name: data["company"],
+          company_logo: data["company_logo"],
+          company_url: data["company_url"],
+          extra_info: data
+        }
 
-        ::Bob::Job.new(name: name, description: description, extra_info: extra_info)
+        ::Bob::Job.new(opts)
       end
     end
   end

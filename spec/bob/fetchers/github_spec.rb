@@ -14,5 +14,8 @@ describe Bob::Fetchers::Github do
 
     its(:name) {should == "Sr. Mobile Application Developer, Android at ModCloth"}
     its(:description) {should =~ /<p>ModCloth currently has an exciting opportunity for a highly skilled Android developer./}
+    its(:company_name) {should == "ModCloth"}
+    its(:company_logo) {should == "http://github-jobs.s3.amazonaws.com/f5100178-377d-11e3-8618-7ebb0e979680.png"}
+    its(:company_url) {should == "http://www.modcloth.com"}
   end
 end
