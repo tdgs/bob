@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "bob"
   spec.version       = Bob::VERSION
   spec.authors       = ["Giorgos Avramidis"]
-  spec.email         = ["avramidg@gmail.com"]
+  spec.email         = ["avramidggmail.com"]
   spec.description   = %q{Bob, the Job Fetcher}
   spec.summary       = %q{Fetch Job Posting Information}
   spec.homepage      = ""
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "oj"
+  spec.add_dependency "nokogiri"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
