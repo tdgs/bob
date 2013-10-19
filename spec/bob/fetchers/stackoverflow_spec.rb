@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Bob::Fetchers::Stackoverflow do
   context "with a valid github url" do
     let(:url) do
-      "http://careers.stackoverflow.com/jobs/21426/senior-web-api-engineer-gamechanger?a=q88RPGaQ"
+      "http://careers.stackoverflow.com/company/stadtwerke-m%C3%BCnchen"
     end
 
     subject do
@@ -12,9 +12,9 @@ describe Bob::Fetchers::Stackoverflow do
       end
     end
 
-    its(:name) {should == "Senior Web &amp; API Engineer at"}
-    its(:description) {should == "Work with cool technology, a great design team, and a ton of data to build one of the most engaging sites on the internet. We use modern technology and processâ\u0080¦"}
+    its(:name) {should == "Stadtwerke München GmbH"}
+    its(:description) {should == "Die Stadtwerke M&amp;uuml;nchen (SWM) z&amp;auml;hlen zu den gr&amp;ouml;&amp;szlig;ten Energie- und Infrastrukturunternehmen Deutschlands. &amp;Uuml;ber eine Million Privathaushalte, Gewerbe- und Gesch&amp;auml;ftskundenâ\u0080¦"}
 
-    its(:company_logo) {should == "http://media.tumblr.com/tumblr_kv5xo0oUZP1qa9tmv.jpg"}
+    its(:company_logo) {should == "http://i.stack.imgur.com/ghuhbl.jpg"}
   end
 end

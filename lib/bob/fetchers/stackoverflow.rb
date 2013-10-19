@@ -23,12 +23,17 @@ module Bob
 
       def create_job(attrs)
         opts = {}
-        opts[:name] = attrs["og:title"].strip
-        opts[:description] = attrs["og:description"].strip
-        opts[:company_logo] = attrs["twitter:image"].strip
+        opts[:name] = any_of(attrs, "og:title", "twitter:title")
+        opts[:description] = any_of(attrs, "og:description", "twitter:description")
+        opts[:company_logo] = any_of(attrs, "twitter:image")
         opts[:extra_info] = attrs
 
         ::Bob::Job.new(opts)
+      end
+
+      private
+      def any_of(hash, *keys)
+        hash.values_at(*keys).compact.map(&:strip).first
       end
     end
   end
