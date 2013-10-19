@@ -16,6 +16,7 @@ module Bob
   }
 
   def fetch(url)
+    url = URI.encode(url)
     host = URI(url).host
     FETCHERS.fetch(host) do
       raise UnprocessableHostError.new("Dont know how to handle #{url}.")

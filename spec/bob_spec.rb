@@ -15,11 +15,11 @@ describe Bob do
 
     describe 'Stackoverflow' do
       let(:url) do
-        'http://careers.stackoverflow.com/jobs/21426/senior-web-api-engineer-gamechanger?a=q88RPGaQ'
+        "http://careers.stackoverflow.com/company/stadtwerke-münchen"
       end
 
       it 'uses stackoverflow' do
-        Bob::Fetchers::Stackoverflow.should_receive(:fetch).with(url)
+        Bob::Fetchers::Stackoverflow.should_receive(:fetch).with(URI.encode(url))
         Bob.fetch(url)
       end
     end
