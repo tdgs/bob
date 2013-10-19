@@ -6,8 +6,8 @@ require 'bob/version'
 Gem::Specification.new do |spec|
   spec.name          = "bob"
   spec.version       = Bob::VERSION
-  spec.authors       = ["Giorgos Avramidis"]
-  spec.email         = ["avramidggmail.com"]
+  spec.authors       = ["Giorgos Avramidis", "Dario Hamidi"]
+  spec.email         = ["avramidg@gmail.com", "dario.hamidi@gmail.com"]
   spec.description   = %q{Bob, the Job Fetcher}
   spec.summary       = %q{Fetch Job Posting Information}
   spec.homepage      = ""
