@@ -18,8 +18,18 @@ module Bob
   def fetch(url)
     url = URI.encode(url)
     host = URI(url).host
-    FETCHERS.fetch(host) do
-      raise UnprocessableHostError.new("Dont know how to handle #{url}.")
-    end.fetch(url)
+    fetcher = FETCHERS[host]
+
+    raise_error(url) if fetcher.nil?
+    begin
+      fetcher.fetch(url)
+    rescue StandardError
+      raise_error(url)
+    end
+  end
+
+  private
+  def raise_error(url)
+    raise UnprocessableHostError.new("Dont know how to handle #{url}.")
   end
 end

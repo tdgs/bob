@@ -24,6 +24,20 @@ describe Bob do
       end
     end
 
+    describe "404" do
+      let(:url) do
+        'https://jobs.github.com/lalalala'
+      end
+
+      it "handles the 404 from URI" do
+        VCR.use_cassette("404") do
+          expect {
+            Bob.fetch(url)
+          }.to raise_error Bob::UnprocessableHostError
+        end
+      end
+    end
+
     describe "Unprocessable host" do
       let(:url) do
         'https://news.ycombinator.com/jobs'
