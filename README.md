@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'bob'
+    gem 'job-bob, require: 'bob'
 
 And then execute:
 
